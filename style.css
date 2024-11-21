@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  .first {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(10, 3, 31, 0.3), rgba(10, 3, 31, 0.3));
+    position: relative;
+    padding: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .second {
+    text-align: center;
+    transform: translateY(-150px); /* Move the content 50px up */
+  }
+  
+  .second h1 {
+    font-size: 120px;
+    color: whitesmoke;
+    font-weight: 530;
+    transition: color 0.5s, -webkit-text-stroke 0.5s; /* Ensures color and text-stroke transitions smoothly */
+  }
+  
+  .second h1:hover {
+    -webkit-text-stroke: 2px white;
+    color: transparent; /* Changes to transparent on hover */
+    transition: color 0.5s, -webkit-text-stroke 0.5s; /* Smooth transition for 5 seconds */
+  }
+  
+  
+
+  .second a {
+    text-decoration: none;
+    display: inline-block;
+    color: beige;
+    font-size: 22px;
+    border: 2px solid whitesmoke;
+    padding: 14px 50px;
+    margin-top: 20px;
+    transition: background-color 0.5s, color 0.5s; /* Transition for background and text color */
+  }
+  
+  .second a:hover {
+    background-color: #ffff; /* Change background color on hover */
+    color: #000; /* Change text color on hover */
+  }
+  
+  
+  .back-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
